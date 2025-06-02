@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#logo{
+    width: 40px;
+}
+
+#name{
+    margin-left: 15px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#principal{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2a2a2a;
+    border-radius: 40px;
+    width: 350px;
+    height: 470px;
+    margin-bottom: 50px;
+}
+
+#visor{
+    margin: 10px 5px 10px 5px;
+    padding: 20px;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+}
+
+#teclado{
+    margin: 10px 0px;
+}
+
+#box-one{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:10px;
+}
+
+.box-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#box-one{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px ;
+}
+
+#on-ce{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    background: rgb(0, 216, 140);
+    border: 0.5px solid rgb(0, 111, 68);
+    cursor: pointer;
+}
+
+.yellow-btn{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: rgb(246, 255, 0);
+    border: 0.5px solid rgb(95, 95, 18);
+    cursor: pointer;
+}
+
+.btn-comum{
+    width: 60px;
+    height: 35px;
+    border-radius: 9px;
+    border: 1px solid #2a2a2a;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    background: #121212;
+}

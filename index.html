@@ -11,13 +11,13 @@
 <body>
     <header id="top">
         <img src="./assets/img/logo.svg" alt="logo" id="logo">
-        <h1 id="name">CALCULATOR/DEV</h1>
+        <h1 id="name">CALCULATOR<span>/DEV</span></h1>
     </header>
 
     <main id="principal">
         <div id="body-calculator">
             <div id="visor">
-                <p>Este é o visor</p>
+                <p>1000 + 10000</p>
             </div>
             <div id="teclado">
                 <div id="box-one">
@@ -28,37 +28,40 @@
                 </div>
                 <div class="box-btn box-two">
                     <button class="btn-comum off">OFF</button>
-                    <button class="btn-comum raiz">√</button>
-                    <button class="btn-comum porcentagem">%</button>
-                    <button class="btn-comum divisao">÷</button>
+                    <button class="btn-comum raiz" onclick="operation()" value="√">√</button>
+                    <button class="btn-comum porcentagem" onclick="operation()" value="%">%</button>
+                    <button class="btn-comum divisao" onclick="operation()" value="/">÷</button>
                 </div>
                 <div class="box-btn box-three">
-                    <button class="btn-comum sete">7</button>
-                    <button class="btn-comum oito">8</button>
-                    <button class="btn-comum nove">9</button>
-                    <button class="btn-comum multiplicacao">x</button>
+                    <button class="btn-comum sete" onclick="operation()" value="7">7</button>
+                    <button class="btn-comum oito" onclick="operation()" value="8">8</button>
+                    <button class="btn-comum nove" onclick="operation()" value="9">9</button>
+                    <button class="btn-comum multiplicacao" onclick="operation()">x</button>
                 </div>
                 <div class="box-btn box-four">
-                    <button class="btn-comum quatro">4</button>
-                    <button class="btn-comum cinco">5</button>
-                    <button class="btn-comum seis">6</button>
-                    <button class="btn-comum subtracao">-</button>
+                    <button class="btn-comum quatro" onclick="operation()" value="4">4</button>
+                    <button class="btn-comum cinco" onclick="operation()" value="5">5</button>
+                    <button class="btn-comum seis" onclick="operation()" value="6">6</button>
+                    <button class="btn-comum subtracao" onclick="operation()" value="-">-</button>
                 </div>
-                <div class="box-btn box-five">
-                    <button class="btn-comum um">1</button>
-                    <button class="btn-comum dois">2</button>
-                    <button class="btn-comum tres">3</button>
-                    <button class="btn-comum adicao">+</button>
+                <div id="position-btn">
+
+                    <div class="box-btn box-five">
+                        <button class="btn-comum um position" onclick="operation()" value="1">1</button>
+                        <button class="btn-comum dois position" onclick="operation()" value="2">2</button>
+                        <button class="btn-comum tres position" onclick="operation()" value="3">3</button>
+                    </div>
+
+                    <button class="btn-comum adicao position" onclick="operation()">+</button>
                 </div>
-                <div class="box-btn box-five">
-                    <button class="btn-comum zero">0</button>
-                    <button class="btn-comum zero">0</button>
-                    <button class="btn-comum ponto">.</button>
-                    <button class="btn-comum igual">=</button>
+                <div class="box-btn box-six">
+                    <button class="btn-comum zero" onclick="operation()" value="0">0</button>
+                    <button class="btn-comum ponto" onclick="operation()" value=".">.</button>
+                    <button class="btn-comum igual" onclick="operation()" value="=">=</button>
                 </div>
             </div>
         </div>
     </main>
-
 </body>
+<script src="./js/script.js"></script>
 </html>

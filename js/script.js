@@ -1,23 +1,31 @@
-//numeros
+let botoes = document.querySelectorAll(".number"); // procura todos os botoes que tem a classe .number
+let equal = document.querySelector(".equal"); //para escutar o clique e calcular o resultado
+let visor = document.querySelector(".screen"); //muda o conteudo da tela
+let textoVisor = ""; // guarda tudo que o user digita
 
-const number1 = document.querySelector(".um").value
-const number2 = document.querySelector(".dois").value
-const number3 = document.querySelector(".tres").value
-const number4 = document.querySelector(".quatro").value
-const number5 = document.querySelector(".cinco").value
-const number6 = document.querySelector(".seis").value
-const number7 = document.querySelector(".sete").value
-const number8 = document.querySelector(".oito").value
-const number9 = document.querySelector(".nove").value
-const number0 = document.querySelector(".zero").value
+// Quando clicar em número ou operador
+botoes.forEach(botao => { //
+    botao.addEventListener("click", function () {
+        let valor = botao.innerHTML; //aqui pegamos o number/operador que foi digitado e coloca dentro da variavel valor
 
-//operadores
+        textoVisor += valor; // aqui acresentamos novo digito ao que já está guardado em valor
+        visor.innerHTML = textoVisor; //aqui estamos mostrando o que já foi digitado no visor da calculadora
+    });
+});
 
-const btnAdicao = document.querySelector(".adicao").value
-const btnSubtracao = document.querySelector(".subtracao").value
-const btnDivisao = document.querySelector(".divisao").value
-const btnMultiplicao = document.querySelector(".multiplicacao").value
+// Quando clicar no botão igual
+equal.addEventListener("click", function () {
+    if (textoVisor !== "") {
+        let resultado = eval(textoVisor); //aqui é calculado e guardo o resultado na variavel resultado
+        visor.innerHTML = resultado;
+        textoVisor = resultado + ""; // transforma em string para continuar cálculo
+    }
+});
 
-function operation() {
+// Botão de limpar (On/CE)
+let clear = document.querySelector(".clear");
 
-}
+clear.addEventListener("click", function () {
+    textoVisor = "";
+    visor.innerHTML = "";
+});

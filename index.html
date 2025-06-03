@@ -17,47 +17,47 @@
     <main id="principal">
         <div id="body-calculator">
             <div id="visor">
-                <p>1000 + 10000</p>
+                <p class="screen"></p>
             </div>
             <div id="teclado">
                 <div id="box-one">
-                    <button id="on-ce">On/CE</button>
+                    <button id="on-ce" class="clear">Clear</button>
                     <button class="yellow-btn"></button>
                     <button class="yellow-btn"></button>
                     <button class="yellow-btn"></button>
                 </div>
                 <div class="box-btn box-two">
-                    <button class="btn-comum off">OFF</button>
-                    <button class="btn-comum raiz" onclick="operation()" value="√">√</button>
-                    <button class="btn-comum porcentagem" onclick="operation()" value="%">%</button>
-                    <button class="btn-comum divisao" onclick="operation()" value="/">÷</button>
+                    <button class="btn-comum"></button>
+                    <button class="btn-comum"></button>
+                    <button class="btn-comum"></button>
+                    <button class="btn-comum divisao number">/</button>
                 </div>
                 <div class="box-btn box-three">
-                    <button class="btn-comum sete" onclick="operation()" value="7">7</button>
-                    <button class="btn-comum oito" onclick="operation()" value="8">8</button>
-                    <button class="btn-comum nove" onclick="operation()" value="9">9</button>
-                    <button class="btn-comum multiplicacao" onclick="operation()">x</button>
+                    <button class="btn-comum sete number" value="7">7</button>
+                    <button class="btn-comum oito number" value="8">8</button>
+                    <button class="btn-comum nove number" value="9">9</button>
+                    <button class="btn-comum multiplicacao number">*</button>
                 </div>
                 <div class="box-btn box-four">
-                    <button class="btn-comum quatro" onclick="operation()" value="4">4</button>
-                    <button class="btn-comum cinco" onclick="operation()" value="5">5</button>
-                    <button class="btn-comum seis" onclick="operation()" value="6">6</button>
-                    <button class="btn-comum subtracao" onclick="operation()" value="-">-</button>
+                    <button class="btn-comum quatro number" value="4">4</button>
+                    <button class="btn-comum cinco number" value="5">5</button>
+                    <button class="btn-comum seis number" value="6">6</button>
+                    <button class="btn-comum subtracao number">-</button>
                 </div>
                 <div id="position-btn">
 
                     <div class="box-btn box-five">
-                        <button class="btn-comum um position" onclick="operation()" value="1">1</button>
-                        <button class="btn-comum dois position" onclick="operation()" value="2">2</button>
-                        <button class="btn-comum tres position" onclick="operation()" value="3">3</button>
+                        <button class="btn-comum um position number" value="1">1</button>
+                        <button class="btn-comum dois position number" value="2">2</button>
+                        <button class="btn-comum tres position number" value="3">3</button>
                     </div>
 
-                    <button class="btn-comum adicao position" onclick="operation()">+</button>
+                    <button class="btn-comum adicao position number">+</button>
                 </div>
                 <div class="box-btn box-six">
-                    <button class="btn-comum zero" onclick="operation()" value="0">0</button>
-                    <button class="btn-comum ponto" onclick="operation()" value=".">.</button>
-                    <button class="btn-comum igual" onclick="operation()" value="=">=</button>
+                    <button class="btn-comum zero number" value="0">0</button>
+                    <button class="btn-comum ponto number">.</button>
+                    <button class="btn-comum igual equal">=</button>
                 </div>
             </div>
         </div>
